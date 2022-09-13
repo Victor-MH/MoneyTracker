@@ -1,0 +1,19 @@
+@use '../../config/Colors.scss';
+
+.main_btn {
+    min-width: 7rem;
+    padding: .5rem .35rem;
+    background-color: Colors.$main-color;
+    border: 2px solid Colors.$main-color;
+    color: white;
+    border-radius: .4rem;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main_btn:hover {
+    background-color: Colors.$main-color--light;
+    border: 2px solid Colors.$main-color;
+    color: Colors.$main-color;
+}

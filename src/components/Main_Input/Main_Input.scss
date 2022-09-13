@@ -1,0 +1,44 @@
+@use '../../config/Colors.scss';
+
+$max-width: 280px;
+
+.main_input_container {
+    width: 100%;
+    text-align: left;
+    
+    .main_input_label,
+    .main_input-text {
+        width: 100%;
+        max-width: $max-width;
+        padding: 4px;
+    }
+    
+    .main_input_label {
+        display: block;
+        padding-left: 0;
+    }
+    
+    .main_input-text {
+        max-width: calc($max-width - 12px);
+        border-radius: 6px;
+        border: 2px solid Colors.$main-color;
+        background-color: Colors.$main-color--light
+    }
+
+    .main_input-text:focus {
+        outline: none;
+        box-shadow: 0px 0px 4px Colors.$main-color;
+    }
+}
+
+
+.main_input_container--login {
+    margin: 0 auto;
+    width: 80%;
+    max-width: $max-width;
+
+    .main_input_label,
+    .main_input-text {
+        font-size: 16px;
+    }
+}

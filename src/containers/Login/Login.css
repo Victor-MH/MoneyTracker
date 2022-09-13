@@ -1,0 +1,20 @@
+body {
+    background-color: #282c34;
+}
+
+.login_container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    color: white;
+    font-size: 16px;
+}
+
+.login_title {
+    color: #9747FF;
+    font-size: 36px;
+    font-weight: 600;
+}
